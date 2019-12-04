@@ -1,0 +1,184 @@
+void setup(){
+size(500,500);
+background(255);
+}
+void draw(){
+background(255);
+
+//sky
+fill(135, 206, 235);
+rect(0, 0, 500, 200);
+
+//grass
+fill(96, 200, 56);
+rect(0, 200, 500, 300);
+
+
+//UP GUY
+//head
+fill(#FFE0BD
+);
+rect(100, 250, 200, 150, 30);
+
+//wrinkles
+line(150, 265, 250, 265);
+line(170, 270, 230, 270);
+
+fill(0,0,0);
+//glasses
+fill(#FFE0BD);
+strokeWeight(4);
+square(145, 280, 45);
+line(190, 300, 210, 300);
+square(210, 280, 45);
+
+
+//eyes
+strokeWeight(1);
+fill(0,0,0);
+ellipse(170, 300, 15, 15);
+ellipse(230, 300, 15, 15);
+
+//mouth
+arc(203, 350, 75, 10, 0, PI);
+line(238, 340, 238, 360);
+line(165, 340, 165, 360);
+
+//body(suit)
+fill(101, 67, 33);
+rect(75, 400, 250, 100, 35);
+
+//white shirt
+fill(255,255,255);
+triangle(125, 400, 200, 465, 270, 400);
+
+//bow tie
+fill(0,0,0);
+ellipse(200, 410, 20, 20);
+triangle(200, 410, 160, 390, 160, 430);
+triangle(200, 410, 240, 390, 240, 430);
+
+//buttons
+ellipse(202, 470, 10, 10);
+ellipse(202, 490, 10, 10);
+
+//fedora
+fill(101, 67, 33);
+quad(80, 250, 100, 230, 300, 230, 320, 250);
+fill(0,0,0);
+quad(125, 230, 145, 210, 260, 210, 280, 230);
+fill(101, 67, 33);
+quad(145, 210, 165, 180, 260, 180, 275, 225);
+fill(135, 206, 235);
+arc(220, 180, 30, 15, 0, PI);
+
+//house
+fill(195, 85, 64);
+rect(340, 155, 70, 70);
+fill(0,0,0);
+triangle(320, 155, 430, 155, 375, 95);
+
+//BALLOONS
+
+//red balloons
+line(mouseX,mouseY,375,95);
+fill(255,0,0);
+ellipse(mouseX,mouseY,30,50);
+
+line(mouseX-40, mouseY+30, 375, 90);
+fill(255,0,0);
+ellipse(mouseX-40, mouseY+30,30,50);
+
+line(mouseX+13, mouseY-27, 375, 90);
+fill(255,0,0);
+ellipse(mouseX+13, mouseY-27,30,50);
+
+line(mouseX-10, mouseY-55, 375, 90);
+fill(255,0,0);
+ellipse(mouseX-10, mouseY-55,30,50);
+
+line(mouseX+23,mouseY-13,375,95);
+fill(0,0,255);
+ellipse(mouseX+23,mouseY-13,30,50);
+
+line(mouseX+35,mouseY+46,375,95);
+fill(0,0,255);
+ellipse(mouseX+35,mouseY+46,30,50);
+
+//orange balloons
+line(mouseX-40, mouseY-40, 375, 95);
+fill(255, 129, 0);
+ellipse(mouseX-40, mouseY-40, 30, 50);
+
+line(mouseX-30, mouseY+20, 375, 95);
+fill(255, 129, 0);
+ellipse(mouseX-30, mouseY+20, 30, 50);
+
+line(mouseX+37, mouseY-48, 375, 95);
+fill(255, 129, 0);
+ellipse(mouseX+37, mouseY-48, 30, 50);
+
+line(mouseX-40, mouseY+6, 375, 95);
+fill(255, 129, 0);
+ellipse(mouseX-40, mouseY+6, 30, 50);
+
+//yellow balloons
+line(mouseX-20,mouseY-20,375,95);
+fill(255,255,0);
+ellipse(mouseX-20,mouseY-20,30,50);
+
+line(mouseX+30,mouseY+40,375,95);
+fill(255,255,0);
+ellipse(mouseX+30,mouseY+40,30,50);
+
+line(mouseX-13,mouseY+30,375,95);
+fill(255,255,0);
+ellipse(mouseX-13,mouseY+30,30,50);
+
+line(mouseX-20,mouseY-20,375,95);
+fill(255,255,0);
+ellipse(mouseX-20,mouseY-20,30,50);
+
+line(mouseX-7, mouseY-14, 375, 95);
+fill(128, 0, 128);
+ellipse(mouseX-7, mouseY-14, 30, 50);
+
+line(mouseX-20,mouseY-20,375,95);
+fill(255,255,0);
+ellipse(mouseX-20,mouseY-20,30,50);
+
+//green balloons
+line(mouseX,mouseY+30,375,95);
+fill(0,255,0);
+ellipse(mouseX,mouseY+30,30,50);
+
+line(mouseX+20,mouseY-50,375,95);
+fill(0,255,0);
+ellipse(mouseX+20,mouseY-50,30,50);
+
+line(mouseX-46, mouseY-4, 375, 90);
+fill(255,0,0);
+ellipse(mouseX-46, mouseY-4,30,50);
+
+line(mouseX+18, mouseY+31, 375, 90);
+fill(255,0,0);
+ellipse(mouseX+18, mouseY+31,30,50);
+
+//blue balloons
+line(mouseX+20,mouseY+20,375,95);
+fill(0,0,255);
+ellipse(mouseX+20,mouseY+20,30,50);
+
+//purple balloons
+line(mouseX-40, mouseY, 375, 95);
+fill(128, 0, 128);
+ellipse(mouseX-40, mouseY, 30, 50);
+
+line(mouseX-1, mouseY+12, 375, 95);
+fill(128, 0, 128);
+ellipse(mouseX-1, mouseY+12, 30, 50);
+
+
+
+surface.setTitle(mouseX+","+mouseY);
+}
